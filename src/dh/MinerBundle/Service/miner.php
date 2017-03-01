@@ -27,8 +27,10 @@ class miner
 	    	$images = array_values(array_unique($matches[0]));
 	    	
 	    	for($i = 0; $i < count ($images); $i++){
-	    		echo "<div class='image-wrapper' style='width: 400px; height: 400px; display:flex; padding: 5px; float:left;'>";
-	    		echo "<div class='image' style='float:left; padding: 5px; border: 10px solid black;'>";
+	    		echo "<div class='image-wrapper' style='width: 400px; height: 400px; display:flex; padding: 5px; float:left; .image-wrapper:hover {
+    opacity: 0.8;}'>";
+	    		echo "<div class='image' style='float:left; padding: 5px; border: 10px solid black; border: 4px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>";
 	    		echo "<img src='$images[$i]' style='width: 100%; height: 100%;'></br />";
 	    		echo "</div>";
 	    		echo "</div>";
@@ -65,8 +67,8 @@ class miner
     	print_r($title);
     	curl_close($curl);
     }
-
+*/
 
 }
-*/
+
 ?>
