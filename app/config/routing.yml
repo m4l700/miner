@@ -1,0 +1,7 @@
+dh_miner:
+    resource: "@dhMinerBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

@@ -1,0 +1,3 @@
+dh_miner_homepage:
+    path:     /
+    defaults: { _controller: dhMinerBundle:Default:index }
